@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include<ctype.h>
+int main() {
+    char c;
+    int lowercase_vowel, uppercase_vowel;
+    printf("Enter an alphabet: ");
+    scanf("%c", &c);
+    if (isalpha(c) == 0)
+        printf("%c is not a alphabhet.", c);
+    else
+        printf("%c is a alphabet", c);
+    return 0;
+}
