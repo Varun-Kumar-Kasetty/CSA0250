@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char x[100], y[100];
+	fgets(x,sizeof(x),stdin);
+	fgets(y,sizeof(y),stdin);
+	strcpy(x,y);
+	puts(x);
+	return 0;
+}
