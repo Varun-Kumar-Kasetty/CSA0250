@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char x[100];
+	printf("Input a number = ");
+	fgets(x,sizeof(x),stdin);
+	printf("the number in the reverse order is : %s", strrev(x));
+	return 0;
+}
