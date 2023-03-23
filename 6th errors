@@ -1,0 +1,16 @@
+main() {
+
+    int a = 10;      
+
+    if ((fork ( ) == 0))      
+
+    a++;      
+
+    printf ("%dn", a ); 
+
+}
+
+errors :-
+[Warning] incompatible implicit declaration of built-in function 'printf'
+undefined reference to `fork'
+ld returned 1 exit status
