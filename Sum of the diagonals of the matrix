@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+	int i, j, k, s1, s2, a[3][3];
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("Enter the element of %d row,%d column of matrix A =  ", i, j);
+			scanf("%d", &a[i][j]);
+		}
+		printf("\n");
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d ", a[i][j]);
+		}
+		printf("\n");
+	}
+	printf("Major Diagonal elements = ");
+	for(k=0;k<3;k++)
+	{
+		printf("%d, ", a[k][k]);
+		s1=s1+a[k][k];
+	}
+	printf("\nminor diagonal elements = ");
+	for(i=0,j=2;i<=2&&j>=0;i++,j--)
+	//for( i = 0 ; i < 2 ; i++ && j = 2 ; j >= 0 ; j--)
+	{
+		printf("%d, ", a[i][j]);
+		s2=s2+a[i][j];
+	}
+	printf("\n The sum of major diagonal elements = %d\n\n", s1);
+	printf("\n The sum of minor diagonal elements = %d\n\n", s2);
+	if(s1==s2)
+	printf("The sum is same");
+	else
+	printf("The sum is not same");
+	return 0;
+}
