@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+struct employee
+{
+int ID;
+char name[100];
+float salary;
+} e1;
+int main()
+{
+	printf("Enter the ID = ");
+	scanf("%d", &e1.ID);
+	printf("Enter the name = ");
+	scanf("%s", &e1.name);
+	printf("Enter the salary = ");
+	scanf("%f", &e1.salary);
+	
+	printf("ID : %d\n", e1.ID);
+	printf("Name : %s\n", e1.name);
+	printf("Salary: %.2f", e1.salary);
+	return 0;
+}
