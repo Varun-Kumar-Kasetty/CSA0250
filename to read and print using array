@@ -1,0 +1,10 @@
+//To print I am expert in C using array
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	char a[100];
+	fgets(a,100,stdin);
+	puts(a);
+	return 0;
+}
