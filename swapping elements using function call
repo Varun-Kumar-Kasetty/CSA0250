@@ -1,0 +1,23 @@
+//To swap elements using function call by referenece
+#include<stdio.h>
+#include<conio.h>
+void swap(int *a, int*b);
+int main()
+{
+	int a, b, c;
+	printf("Enter the value of 'a' = ");
+	scanf("%d", &a);
+	printf("Enter the value of 'b' = ");
+	scanf("%d", &b);
+	swap(&a,&b);
+	printf("After swapping, a = %d\n", a);
+	printf("After swapping, b = %d", b);
+	return 0;
+}
+void swap(int *a, int*b)
+{
+	int c;
+	c = *a;
+	*a = *b;
+	*b = c;
+}
